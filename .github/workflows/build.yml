@@ -28,7 +28,7 @@ jobs:
 
       - name: Build debug APK
         working-directory: NeonPC
-        run: gradle assembleDebug --stacktrace
+        run: gradle assembleDebug --console=plain
 
       - uses: actions/upload-artifact@v4
         with:
